@@ -4,48 +4,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
+    <!-- favicon -->
+    <link rel="stylesheet" href="">
+    <!-- remixicon -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css" rel="stylesheet" />
+    <!-- google fonts
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet"> -->
+    <!-- css -->
+    <link rel="stylesheet" href="style.css">
     <title>My-Portfolio</title>
 </head>
 
 <body>
-    <ul class="navigation">
-        <li class="active">
-            <a href="#">
-                <span class="icon"><ion-icon name="home-outline"></ion-icon></span>
-                <span class="text">Home</span>
-            </a>
-        </li>
-        <li>
-            <a href="#">
-                <span class="icon"><ion-icon name="person-outline"></ion-icon></span>
-                <span class="text">Profile</span>
-            </a>
-        </li>
-        <li>
-            <a href="#">
-                <span class="icon"><ion-icon name="chatbubble-outline"></ion-icon></span>
-                <span class="text">Messages</span>
-            </a>
-        </li>
-        <li>
-            <a href="#">
-                <span class="icon"><ion-icon name="camera-outline"></ion-icon></span>
-                <span class="text">Photos</span>
-            </a>
-        </li>
-        <li>
-            <a href="#">
-                <span class="icon"><ion-icon name="settings-outline"></ion-icon></span>
-                <span class="text">Settings</span>
-            </a>
-        </li>
-    </ul>
+    <!-- header -->
 
-    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="nav__logo">
+                Manju <span>Bhaskar</span>
+            </a>
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link">Home</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#about" class="nav__link">About</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#services" class="nav__link">Services</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#projects" class="nav__link">Projects</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#contacts" class="nav__link">Contacts</a>
+                    </li>
+                </ul>
+                <div class="nav__close" id="nav-close">
+                    <i class="ri-close-line"></i>
+                </div>
+            </div>
+            <div class="nav__toggle" id="nav-toggle">
+                <i class="ri-menu-line"></i>
+            </div>
+        </nav>
+    </header>
+
+
+
     <script src="./javascript.js"></script>
-
 </body>
 
 </html>

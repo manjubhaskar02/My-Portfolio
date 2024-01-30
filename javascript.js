@@ -1,11 +1,22 @@
-let list = document.querySelectorAll
-    ('.navigation li');
+// SHOW MENU
+const navMenu = document.getElementById("nav-menu");
+const navToggle = document.getElementById("nav-toggle");
+const navClose = document.getElementById("nav-close");
 
-function activeLink() {
-    list.forEach((item) =>
-        item.classList.remove('active'));
-    this.classList.add('active');
+if (navToggle) {
+    navToggle.addEventListener('click', () => {
+        navMenu.classList.add("show-menu");
+    })
+}
+if (navClose) {
+    navClose.addEventListener('click', () => {
+        navMenu.classList.remove("show-menu");
+    })
 }
 
-list.forEach((item) =>
-    item.addEventListener('click', activeLink))
+// REMOVE MENU ON CLICK
+const navLink = document.querySelectorAll('.nav__link')
+function linkAction() {
+    navMenu.classList.remove("show-menu");
+}
+navLink.forEach(n => n.addEventListener('click', linkAction));
